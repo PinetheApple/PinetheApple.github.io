@@ -79,6 +79,12 @@ a.button:hover{
     text-decoration: none;
 }
 
+.bar{
+    width: 1.5rem;
+    height: 0.1rem;
+    background-color: var(--c3);
+}
+
 /* line style */
 .line{
     background: var(--c4);
@@ -247,4 +253,60 @@ footer{
 
 .details p{
     margin: 0 auto;
+}
+
+@media (max-width: 1450px){
+    h2::before, h2::after{
+        width: 8rem;
+    }
+
+    h2::before{
+        left: 10rem;
+    }
+    
+    h2::after{
+        right: 10rem;
+    }
+}
+
+@media (max-width: 1024px)
+{
+    .rightsection{
+        right: -1rem;
+    }
+
+    h2::before, h2::after{
+        width: 6rem;
+    }
+
+    h2::before{
+        left: 5rem;
+    }
+    
+    h2::after{
+        right: 5rem;
+    }
+}
+
+@media (max-width: 850px)
+{
+    .rightsection, .leftsection{
+        display: none;
+    }
+
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .innerlinks{
+        display:none;
+    }
+}
+
+@media (max-width: 750px){
+    h2::before, h2::after{
+        display:none;
+    }
 }
