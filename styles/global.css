@@ -153,36 +153,12 @@ footer {
   width: 85%;
 }
 
-/* hero section styles */
-.hero {
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-  margin: 0 auto;
-  align-items: flex-end;
-  max-width: 100%;
-}
-
 h1 {
   font-size: 6rem;
   margin-top: 15rem;
   margin-bottom: -1rem;
   font-family: var(--f2);
   color: var(--c5);
-}
-
-.hero p {
-  text-align: right;
-}
-
-.hero p span {
-  display: block;
-}
-
-/* project section */
-#projects {
-  min-height: 70vh;
 }
 
 h2 {
@@ -210,38 +186,6 @@ h2::before {
 
 h2::after {
   right: 20rem;
-}
-
-.projlist {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: stretch;
-  gap: 2rem;
-}
-
-.projlinks {
-  display: flex;
-  justify-content: right;
-  gap: 0.1rem;
-  margin: 0 auto 1rem;
-}
-
-.proj {
-  flex-basis: 35%;
-  background-color: var(--c1);
-  color: white;
-  padding: 1.5rem 1.5rem 2rem;
-}
-
-/* contact section */
-#contact p {
-  margin: 2rem auto;
-  max-width: 1200px;
-}
-
-#contact a.button {
-  display: block;
 }
 
 /* footer styles */
@@ -278,28 +222,6 @@ footer {
   h2::after {
     right: 10rem;
   }
-
-  #contact p {
-    max-width: 1000px;
-  }
-}
-
-@media (max-width: 1250px){
-    #contact p{
-        max-width: 900px;
-    }
-}
-
-@media (max-width: 1150px){
-    #contact p{
-        max-width: 750px;
-    }
-}
-
-@media (max-width: 1050px){
-    .proj{
-        flex-basis: 60%;
-    }
 }
 
 @media (max-width: 1024px) {
@@ -319,16 +241,6 @@ footer {
   h2::after {
     right: 5rem;
   }
-
-  #contact p {
-    width: 700px;
-  }
-}
-
-@media (max-width: 950px){
-    #contact p{
-        max-width: 600px;
-    }
 }
 
 @media (max-width: 850px) {
@@ -379,24 +291,12 @@ footer {
   .ham.active .bar:nth-child(3) {
     transform: translateY(0) rotate(-45deg);
   }
-
-  #contact p{
-    max-width: fit-content;
-  }
-
-  .proj{
-    flex-basis: 70%;
-  }
 }
 
 @media (max-width: 750px) {
   h2::before,
   h2::after {
     display: none;
-  }
-
-  .proj{
-    flex-basis: 80%;
   }
 
   h1{
@@ -406,10 +306,6 @@ footer {
 }
 
 @media (max-width: 650px){
-    .proj{
-        flex-basis: 90%;
-    }
-
     h1{
         font-size: 4rem;
     }
@@ -423,23 +319,11 @@ footer {
 }
 
 @media (max-width: 460px){
-    .proj{
-        flex-basis: 100%;
-    }
+  main{
+      padding: 2rem 0;
+  }
 
-    main{
-        padding: 2rem 0;
-    }
-
-    .hero{
-        display:block;
-    }
-
-    h1{
-        font-size: 4rem;
-    }
-
-    .hero p{
-        text-align: left;
-    }
+  h1{
+    font-size: 4rem;
+  }
 }
