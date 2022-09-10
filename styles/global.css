@@ -110,13 +110,19 @@ a.button:hover {
   left: 0;
   right: 0;
   background-color: var(--c2);
-  z-index: 10;
+  z-index: 1;
   min-height: 70px;
 }
 
 .innerlinks {
   display: flex;
   gap: 3rem;
+}
+
+.pagelinks a img{
+  margin-left: 2rem;
+  padding: 1rem 0.5rem;
+  margin-bottom: -0.5rem;
 }
 
 /* left section styles */
@@ -254,6 +260,18 @@ footer {
     cursor: pointer;
   }
 
+  .ham.active .bar:nth-child(2) {
+    display: none;
+  }
+
+  .ham.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .ham.active .bar:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+  }
+
   .innerlinks {
     display: flex;
     flex-direction: column;
@@ -280,16 +298,8 @@ footer {
     transition: none;
   }
 
-  .ham.active .bar:nth-child(2) {
-    display: none;
-  }
-
-  .ham.active .bar:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-  }
-
-  .ham.active .bar:nth-child(3) {
-    transform: translateY(0) rotate(-45deg);
+  .pagelinks a img{
+    margin-left: 0;
   }
 }
 
