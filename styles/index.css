@@ -52,6 +52,7 @@
 #contact p {
     margin: 2rem auto;
     max-width: 1200px;
+    text-align: center;
 }
   
 #contact a.button {
@@ -98,6 +99,7 @@
 @media (max-width: 850px) {
     #contact p{
         max-width: fit-content;
+        text-align: left;
 }
   
     .proj{
