@@ -1,2 +1,2 @@
 # PinetheApple.github.io
-portfolio site without gatsby
+portfolio site using html, css and js
