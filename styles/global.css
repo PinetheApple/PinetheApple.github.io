@@ -83,7 +83,7 @@ a.button:hover {
   display: block;
   width: 25px;
   height: 3px;
-  background-color: var(--c3);
+  background-color: var(--c0);
   transition: all 0.3s ease-in-out;
   margin: 0.3rem auto;
 }
