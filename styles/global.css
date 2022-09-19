@@ -299,7 +299,7 @@ footer {
     transition: none;
   }
 
-  .pagelinks a img{
+  .pagelinks div:first-child{
     margin-left: 0;
   }
 }
