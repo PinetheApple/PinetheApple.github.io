@@ -119,7 +119,7 @@ a.button:hover {
   gap: 3rem;
 }
 
-.pagelinks a img{
+.pagelinks div:first-child{
   margin-left: 2rem;
   padding: 1rem 0.5rem;
   margin-bottom: -0.5rem;
