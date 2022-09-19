@@ -1,6 +1,6 @@
 /* hero section styles */
 .hero {
-    height: 90vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     width: fit-content;
@@ -20,6 +20,7 @@
 /* project section */
 #projects {
     min-height: 70vh;
+    padding-top:10vh;
 }
 
 .projlist {
